@@ -35,15 +35,21 @@ body {
 }
 
 #contactGrid button {
-    color:#CD9E50;
     background-color: #88a0962a;
     border: 2px solid #CD9E50;
+    color:#CD9E50;
     border-radius: 10px;
     display: flex;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     padding: 6px 14px;
     text-align: center;
+}
+
+#contactGrid button:hover {
+    border-color: #ecb45b;
+    color: #ecb45b;
+    background-color: #b7d6c92a;
 }
 
 #contactGrid > div:first-child {

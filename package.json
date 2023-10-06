@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "compileGit": "git subtree push --prefix dist origin gh-pages",
     "build": "webpack",
     "watch": "webpack --watch"
   },
