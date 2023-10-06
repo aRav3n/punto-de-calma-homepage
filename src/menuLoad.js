@@ -1,6 +1,5 @@
 export default function(parentContainer) {
     const services = document.createElement('li');
-    services.classList.add('activeMenu');
     const contactUs = document.createElement('li');
     const gallery = document.createElement('li');
     services.setAttribute('id', 'services');

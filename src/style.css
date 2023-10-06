@@ -6,14 +6,15 @@
 
 * {
     color: inherit;
+    justify-self: center;
 }
 
 .activeMenu {
     color: #CD9E50;
     background-color: #a7c7ba42;
-    border-left: 1px solid #CD9E50;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    border-left: 1px solid #CD9E50;
     border-right: 1px solid #CD9E50;
     border-top: 1px solid #CD9E50;
 }
@@ -30,23 +31,65 @@ body {
     width: 100%;
 }
 
+footer {
+    color: #CD9E50;
+    background-color: #dfe1de;
+    font-family: 'HeadlineFont', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1vh 0;
+    text-align: center;
+    width: 100%;
+}
+
+#galleryGrid {
+    align-items: start;
+    display: grid;
+    gap: 2vmin;
+    grid-template-columns: repeat(auto-fit, clamp(300px, 32%, 33%));
+    justify-content: center;
+    justify-items: center;
+    margin: 5vh auto 5vh auto;
+    width: 90vw;
+}
+
+#galleryGrid > * {
+    aspect-ratio: 1 / 1;
+    border: 1px solid #CD9E50;
+    border-radius: 5%;
+    box-sizing: border-box;
+    object-fit: cover;
+    width: max(300px, 28vw);
+}
+
 h1 {
     color: #88a096;
     font-family: 'HeadlineFont', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 48px;
-    justify-self: center;
+}
+
+html{
+    background-color: #dfe1de;
 }
 
 .imageLarge {
     border-radius: 3vmin;
     height: auto;
-    justify-self: center;
     max-width: 95vw;
-    margin-bottom: 16px;
+    margin: 5vh 0;
 }
 
 li {
+    border: 1px solid #ffffff00;
+    box-sizing:border-box;
     padding: 8px 8px 12px 8px;
+}
+
+li:not(.activeMenu):hover {
+    background-color: #a7c7ba25;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-left: 1px solid #CD9E5035;
+    border-right: 1px solid #CD9E5035;
+    border-top: 1px solid #CD9E5035;
 }
 
 #topBar {
@@ -57,6 +100,7 @@ li {
     display: flex;
     font-family: 'HeadlineFont', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     justify-content: center;
+    justify-self: unset;
     position: sticky;
 }
 

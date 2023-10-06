@@ -12,6 +12,8 @@ export default function () {
     myPriceList.src = priceList;
 
     loadMenu(parentContainer);
+    const serviceButton = document.querySelector('#services');
+    serviceButton.classList.add('activeMenu');
     parentContainer.appendChild(headingName);
     parentContainer.appendChild(myPriceList);
 };
