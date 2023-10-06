@@ -1,0 +1,65 @@
+@font-face {
+    font-family: HeadlineFont;
+    src: url('./dancingscript-variablefont_wght-webfont.woff') format('woff'),
+        url('./dancingscript-variablefont_wght-webfont.woff2') format('woff2');
+}
+
+* {
+    color: inherit;
+}
+
+#activeMenu {
+    color: #CD9E50;
+    background-color: #a7c7ba42;
+    border-left: 1px solid #CD9E50;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-right: 1px solid #CD9E50;
+    border-top: 1px solid #CD9E50;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    background-color: #F5F7F6;
+    display: grid;
+    width: 100%;
+}
+
+h1 {
+    color: #88a096;
+    font-family: 'HeadlineFont', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 48px;
+    justify-self: center;
+}
+
+li {
+    padding: 8px 8px 12px 8px;
+}
+
+#topBar {
+    align-items: center;
+    background-color: #dfe1de;
+    border-bottom: 2px solid #CD9E50;
+    color: #88a096;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+
+#topBar > ul {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 2vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 0 0 0;
+    text-align: center;
+}
