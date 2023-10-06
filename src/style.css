@@ -8,7 +8,7 @@
     color: inherit;
 }
 
-#activeMenu {
+.activeMenu {
     color: #CD9E50;
     background-color: #a7c7ba42;
     border-left: 1px solid #CD9E50;
@@ -37,6 +37,14 @@ h1 {
     justify-self: center;
 }
 
+.imageLarge {
+    border-radius: 3vmin;
+    height: auto;
+    justify-self: center;
+    max-width: 95vw;
+    margin-bottom: 16px;
+}
+
 li {
     padding: 8px 8px 12px 8px;
 }
@@ -47,6 +55,7 @@ li {
     border-bottom: 2px solid #CD9E50;
     color: #88a096;
     display: flex;
+    font-family: 'HeadlineFont', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     justify-content: center;
     position: sticky;
 }
@@ -55,7 +64,7 @@ li {
     align-content: center;
     align-items: center;
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     gap: 2vw;
     list-style-type: none;

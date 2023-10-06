@@ -1,7 +1,4 @@
-import priceList from './images/services.jpg'
-
-export default function () {
-    const parentContainer = document.querySelector('#content');
+export default function(parentContainer) {
     const services = document.createElement('li');
     services.classList.add('activeMenu');
     const contactUs = document.createElement('li');
@@ -20,15 +17,6 @@ export default function () {
     topBar.setAttribute('id', 'topBar');
     topBar.appendChild(ul);
     
-    const headingName = document.createElement('h1');
-    headingName.innerHTML = 'Punto de Calma';
-
-    const myPriceList = new Image();
-    myPriceList.classList.add('imageLarge');
-    myPriceList.src = priceList;
-
     parentContainer.innerHTML = '';
     parentContainer.appendChild(topBar);
-    parentContainer.appendChild(headingName);
-    parentContainer.appendChild(myPriceList);
 };
