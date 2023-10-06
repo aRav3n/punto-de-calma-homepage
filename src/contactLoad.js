@@ -17,6 +17,7 @@ export default function() {
     const waLink = document.createElement('a');
     waLink.setAttribute('href', 'https://wa.me/5215519360044');
     waLink.setAttribute('rel', 'noreferrer noopener');
+    waLink.setAttribute('target', '_blank');
     waLink.appendChild(whatsappButton);
 
     const emailButton = document.createElement('button');
@@ -29,6 +30,7 @@ export default function() {
     const emailLink = document.createElement('a');
     emailLink.setAttribute('href', 'mailto:masajes.puntodecalma@gmail.com');
     emailLink.setAttribute('rel', 'noreferrer noopener');
+    emailLink.setAttribute('target', '_blank');
     emailLink.appendChild(emailButton);
 
     const phoneButton = document.createElement('button');
@@ -41,11 +43,12 @@ export default function() {
     const phoneLink = document.createElement('a');
     phoneLink.setAttribute('href', 'tel:+52-55-1936-0044');
     phoneLink.setAttribute('rel', 'noreferrer noopener');
+    phoneLink.setAttribute('target', '_blank');
     phoneLink.appendChild(phoneButton);
 
     const addressDiv = document.createElement('div');
     addressDiv.setAttribute('id', "addressDiv");
-    addressDiv.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15052.415995426221!2d-99.16565900000002!3d19.407912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd99bdbd54b%3A0x120c7f5cac1a26a1!2sPunto%20de%20Calma!5e0!3m2!1sen!2smx!4v1696628761494!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+    addressDiv.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15052.415995426221!2d-99.16565900000002!3d19.407912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd99bdbd54b%3A0x120c7f5cac1a26a1!2sPunto%20de%20Calma!5e0!3m2!1sen!2smx!4v1696628761494!5m2!1sen!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
 
 
     const contactDiv = document.createElement('div');

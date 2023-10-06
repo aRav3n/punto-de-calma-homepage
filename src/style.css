@@ -7,6 +7,7 @@
 * {
     color: inherit;
     justify-self: center;
+    text-decoration: none;
 }
 
 .activeMenu {
@@ -25,15 +26,42 @@ body {
     padding: 0;
 }
 
+#contactGrid {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+}
+
+#contactGrid button {
+    color:#CD9E50;
+    background-color: #88a0962a;
+    border: 2px solid #CD9E50;
+    border-radius: 10px;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding: 6px 14px;
+    text-align: center;
+}
+
+#contactGrid > div:first-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 5vh
+}
+
+#contactGrid > div:last-child {
+    flex-grow: 3;
+}
+
 #content {
     background-color: #F5F7F6;
     display: grid;
     width: 100%;
-}
-
-.embeddedMap {
-    aspect-ratio: 3 / 4;
-    max-width: 600px;
 }
 
 footer {
@@ -73,6 +101,15 @@ h1 {
 
 html{
     background-color: #dfe1de;
+}
+
+iframe {
+    border: 1px solid #CD9E50;
+    border-radius: 2vmin;
+    aspect-ratio: 4 / 3;
+    display: block;
+    margin: 10vh auto;
+    width: min(600px, 90vw);
 }
 
 .imageLarge {
