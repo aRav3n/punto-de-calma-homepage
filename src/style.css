@@ -1,166 +1,170 @@
 @font-face {
-    font-family: HeadlineFont;
-    src: url('./dancingscript-variablefont_wght-webfont.woff') format('woff'),
-        url('./dancingscript-variablefont_wght-webfont.woff2') format('woff2');
+  font-family: HeadlineFont;
+  src:
+    url("./dancingscript-variablefont_wght-webfont.woff") format("woff"),
+    url("./dancingscript-variablefont_wght-webfont.woff2") format("woff2");
 }
 
 * {
-    color: inherit;
-    justify-self: center;
-    text-decoration: none;
+  color: inherit;
+  justify-self: center;
+  text-decoration: none;
 }
 
 .activeMenu {
-    color: #CD9E50;
-    background-color: #a7c7ba42;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-left: 1px solid #CD9E50;
-    border-right: 1px solid #CD9E50;
-    border-top: 1px solid #CD9E50;
+  color: #cd9e50;
+  background-color: #a7c7ba42;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-left: 1px solid #cd9e50;
+  border-right: 1px solid #cd9e50;
+  border-top: 1px solid #cd9e50;
 }
 
 body {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 #contactGrid {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90vw;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
 }
 
 #contactGrid button {
-    background-color: #88a0962a;
-    border: 2px solid #CD9E50;
-    color:#CD9E50;
-    border-radius: 10px;
-    display: flex;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-    padding: 6px 14px;
-    text-align: center;
+  background-color: #88a0962a;
+  border: 2px solid #cd9e50;
+  color: #cd9e50;
+  border-radius: 10px;
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  padding: 6px 14px;
+  text-align: center;
 }
 
 #contactGrid button:hover {
-    border-color: #ecb45b;
-    color: #ecb45b;
-    background-color: #b7d6c92a;
+  border-color: #ecb45b;
+  color: #ecb45b;
+  background-color: #b7d6c92a;
 }
 
 #contactGrid > div:first-child {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 5vh
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 5vh;
 }
 
 #contactGrid > div:last-child {
-    flex-grow: 3;
+  flex-grow: 3;
 }
 
 #content {
-    background-color: #F5F7F6;
-    display: grid;
-    width: 100%;
+  background-color: #f5f7f6;
+  display: grid;
+  width: 100%;
 }
 
 footer {
-    color: #CD9E50;
-    background-color: #dfe1de;
-    font-family: 'HeadlineFont', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 1vh 0;
-    text-align: center;
-    width: 100%;
+  color: #cd9e50;
+  background-color: #dfe1de;
+  font-family: "HeadlineFont", cursive, Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  padding: 1vh 0;
+  text-align: center;
+  width: 100%;
 }
 
 #galleryGrid {
-    align-items: start;
-    display: grid;
-    gap: 2vmin;
-    grid-template-columns: repeat(auto-fit, clamp(300px, 32%, 33%));
-    justify-content: center;
-    justify-items: center;
-    margin: 5vh auto 5vh auto;
-    width: 90vw;
+  align-items: start;
+  display: grid;
+  gap: 2vmin;
+  grid-template-columns: repeat(auto-fit, clamp(300px, 32%, 33%));
+  justify-content: center;
+  justify-items: center;
+  margin: 5vh auto 5vh auto;
+  width: 90vw;
 }
 
 #galleryGrid > * {
-    aspect-ratio: 1 / 1;
-    border: 1px solid #CD9E50;
-    border-radius: 5%;
-    box-sizing: border-box;
-    object-fit: cover;
-    width: max(300px, 28vw);
+  aspect-ratio: 1 / 1;
+  border: 1px solid #cd9e50;
+  border-radius: 5%;
+  box-sizing: border-box;
+  object-fit: cover;
+  width: max(300px, 28vw);
 }
 
 h1 {
-    color: #88a096;
-    font-family: 'HeadlineFont', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 48px;
+  color: #88a096;
+  font-family: "HeadlineFont", cursive, Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  font-size: 48px;
 }
 
-html{
-    background-color: #dfe1de;
+html {
+  background-color: #dfe1de;
 }
 
 iframe {
-    border: 1px solid #CD9E50;
-    border-radius: 2vmin;
-    aspect-ratio: 4 / 3;
-    display: block;
-    margin: 10vh auto;
-    width: min(600px, 90vw);
+  border: 1px solid #cd9e50;
+  border-radius: 2vmin;
+  aspect-ratio: 4 / 3;
+  display: block;
+  margin: 10vh auto;
+  width: min(600px, 90vw);
 }
 
 .imageLarge {
-    border-radius: 3vmin;
-    height: auto;
-    max-width: 95vw;
-    margin: 5vh 0;
+  border-radius: 3vmin;
+  height: auto;
+  max-width: 95vw;
+  margin: 5vh 0;
 }
 
 li {
-    border: 1px solid #ffffff00;
-    box-sizing:border-box;
-    padding: 8px 8px 12px 8px;
+  border: 1px solid #ffffff00;
+  box-sizing: border-box;
+  padding: 8px 8px 12px 8px;
 }
 
 li:not(.activeMenu):hover {
-    background-color: #a7c7ba25;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-left: 1px solid #CD9E5035;
-    border-right: 1px solid #CD9E5035;
-    border-top: 1px solid #CD9E5035;
+  background-color: #a7c7ba25;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-left: 1px solid #cd9e5035;
+  border-right: 1px solid #cd9e5035;
+  border-top: 1px solid #cd9e5035;
 }
 
 #topBar {
-    align-items: center;
-    background-color: #dfe1de;
-    border-bottom: 2px solid #CD9E50;
-    color: #88a096;
-    display: flex;
-    font-family: 'HeadlineFont', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    justify-content: center;
-    justify-self: unset;
-    position: sticky;
+  align-items: center;
+  background-color: #dfe1de;
+  border-bottom: 2px solid #cd9e50;
+  color: #88a096;
+  display: flex;
+  font-family: "HeadlineFont", cursive, Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  justify-content: center;
+  justify-self: unset;
+  position: sticky;
 }
 
 #topBar > ul {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 20px;
-    font-weight: bold;
-    gap: 2vw;
-    list-style-type: none;
-    margin: 0;
-    padding: 8px 0 0 0;
-    text-align: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  gap: 2vw;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px 0 0 0;
+  text-align: center;
 }
